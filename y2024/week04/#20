@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML 5 웹프로그래밍 입문</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+        #first {font-family: "휴먼옛체"; font-size: 20pt; color: blue;}
+        #second {font-family: "휴먼매직체"; font-size: 20pt; color: red; text-decoration: underline;}
+        </style>
+    </head>
+    <body>
+        <p>HTML 5 웹프로그래밍 입문</p>
+        <p><span id="first">CSS</span>란 문서의 <span id="second">style</span>을 정의하는 속성을 모아놓은 <span id="first">언어</span>이다</p>
+        </body>
+</html>
