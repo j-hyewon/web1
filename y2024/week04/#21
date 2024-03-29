@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" />
+    <title>시간표</title>
+<head>
+    <style type="text/css">
+        #books{table-layout: fixed; width: 90%}
+        #books caption{text-align: center; font-weight: bolder; font-size: xx-large; margin: 0.5em;}
+        #first {text-align: center; background-color: #99CCFF;}
+        #second{text-align: center;}
+    </style>
+    <table border="1" id="books">
+        <caption>시간표</caption>
+        <tr div align>
+            <th id="first">교시</th> <th id="first">월</th> <th id="first">화</th> <th id="first">수</th> <th id="first">목</th> <th id="first">금</th>
+        </tr>
+        <tr>
+            <td id="second">1</td> <td id="second">&nbsp;</td> <td id="second">&nbsp;</td> <td rowspan="3" td id="second">자료구조와<br>알고리즘</td> <td id="second">&nbsp;</td> <td rowspan="3" td id="second">모바일프로그래밍</td>
+      </tr>
+      <tr div align>
+            <td id="second">2</td>  <td id="second">&nbsp;</td> <td rowspan="2" td id="second">컴퓨터응용</td>  <td id="second">&nbsp;</td> 
+      </tr>
+      <tr>
+            <td id="second">3</td> <td id="second">&nbsp;</td> <td id="second">&nbsp;</td>
+      </tr>
+      <tr>
+            <td id="second">4</td> <td colspan="5" td id="second">점심시간</td>
+      </tr>
+      <tr>
+            <td id="second">5</td> <td rowspan="2" td id="second">멀티미디어개론</td> <td rowspan="3" td id="second">모바일프로그래밍</td> <td id="second">&nbsp;</td> <td id="second">&nbsp;</td> <td rowspan="2" td id="second">컴퓨터응용</td> 
+      </tr>
+      <tr>
+            <td id="second">6</td>  <td id="second">&nbsp;</td> <td id="second">&nbsp;</td>  
+      </tr>
+     <tr>
+            <td id="second">7</td> <td id="second">&nbsp;</td>  <td id="second">&nbsp;</td> <td id="second">&nbsp;</td> <td id="second">&nbsp;</td> 
+     </tr> 
+     <tr>
+        <td id="second">8</td> <td id="second">&nbsp;</td> <td id="second">&nbsp;</td> <td id="second">&nbsp;</td> <td id="second">&nbsp;</td> <td id="second">&nbsp;</td> 
+ </tr> 
+ </table>
+  </head>
+</html>
