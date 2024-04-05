@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .example{padding: 20px; color: white;}
+            @media all and (max-width: 600px) {
+                .example{background: blue; color: white;}}
+            @media all and (min-width: 600px) and (max-width:1000px){
+                .example {background: yellow;}}
+            @media all and (min-width: 1000px){
+                .example {background: white; font-size:20px}}
+        </style>
+    </head>
+    <body>
+        <h1>미디어의 크기에 따른 배경색의 변화</h1>
+        <p class="example">미디어의 유형과 크기에 따른 배경색 변화를 나타내는 예제이다. 미디어 유형은 all이며, 조건문을 이용하여 웹페이지
+            의 가로 너비가 최대가 600px 이하일 경우, 최소 600px에서 최대 1000px일 경우, 최소 1000px 이상일 경우 각각 배경색과 글자크기를
+            변경하도록한다.
+        </p>
+    </body>
+</html>
