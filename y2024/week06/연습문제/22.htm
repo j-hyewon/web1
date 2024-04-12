@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>수강과목조사</title>
+    </head>
+    <body>
+        <h3>수강과목조사</h3>
+        <from method="get" action="from_app.js">
+        이름: <input type="text" name="name"> <br>
+        학과: <input type="text" name="text"> <br>
+        학년: <br>
+        <input type="radio" name="grade" value="grade" id="grade">
+        <label for="grade">1학년</label>
+        <input type="radio" name="grade" value="grade" id="grade">
+        <label for="grade">2학년</label>
+        <input type="radio" name="grade" value="grade" id="grade">
+        <label for="grade">3학년</label>
+        <input type="radio" name="grade" value="grade" id="grade">
+        <label for="grade">4학년 이상</label>
+        <br>수강과목:<br>
+        <input type="checkbox" name="class" value="class">IT기술의이해
+        <input type="checkbox" name="class" value="class">웹프로그래밍기초
+        <input type="checkbox" name="class" value="class">UI/UX설계
+        <br>&nbsp;
+        <br>
+        <input type="submit" value="확인"/>
+        <input type="reset" value="취소"/>
+    </body>
+</html>

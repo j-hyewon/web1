@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>예약하기</title>
+    </head>
+    <body>
+        <h3>레스토랑 예약하기</h3>
+        <from method="post" action="from_app.js">
+            <fieldset>
+                <legend>예약자 정보</legend>
+                예약자: <input type="text" name="book"><br>
+                연락처: <input type="tel" placeholder="000-0000-0000"
+                pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}"/><br>
+                예약인원: <select name="number" size="1">
+                    <option value="number">1명</option>
+                    <option value="number" selected>2명</option>
+                    <option value="number">3명</option>
+                    <option value="number">4명 이상</option>
+                    </select>
+            </fieldset> <br>
+
+            <fieldset>
+                <legend>일자 선택 및 시간 선택</legend>
+                <input type="date" name="date">
+                <input type="time" name="time">
+            </fieldset> <br>
+<p></p>
+        <input type="submit" value="예약"/>
+        <input type="reset" value="취소"/>
+    </body>
+</html>
