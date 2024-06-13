@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> 날짜 요일 출력</title>
+</head>
+<body>
+    <script type="text/javascript">
+    let today = new Date();
+
+    let year = today.getFullYear();
+    let month = today.getMonth() + 1;
+    let day = today.getDate();
+
+    let weekdays = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
+    let weekday = weekdays[today.getDay()];
+
+    alert("오늘의 날짜: " + year + "년 " + month + "월 " + day + "일");
+    alert("오늘의 요일: " + weekday);
+    </script>
+</body>
+</html>

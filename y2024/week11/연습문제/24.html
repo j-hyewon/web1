@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 슬라이드쇼</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .slideshow-container {
+            position: relative;
+            width: 500px; 
+            height: 500px; 
+        }
+        .slideshow-container img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <img src="image4.jpg" alt="Image 4">
+        <img src="image5.jpg" alt="Image 5">
+        <img src="image6.jpg" alt="Image 6">
+        <img src="image7.jpg" alt="Image 7">
+        <img src="image8.jpg" alt="Image 8">
+        <img src="image9.jpg" alt="Image 9">
+        <img src="image10.jpg" alt="Image 10">
+    </div>
+
+    <script>
+        var currentIndex = 0;
+        var images = document.querySelectorAll('.slideshow-container img');
+        var totalImages = images.length;
+
+        function showNextImage() {
+            // 현재 이미지 숨김
+            images[currentIndex].style.visibility = 'hidden';
+            currentIndex = (currentIndex + 1) % totalImages;
+            images[currentIndex].style.visibility = 'visible';
+        }
+
+        // 1초 간격으로 이미지 전환
+        setInterval(showNextImage, 1000);
+
+        // 초기 이미지 표시
+        images[currentIndex].style.visibility = 'visible';
+    </script>
+</body>
+</html>

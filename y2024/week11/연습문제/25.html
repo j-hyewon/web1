@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>이벤트 예제</title>
+</head>
+<body>
+    <button id="eventButton">버튼</button>
+    <div id="eventLog"></div>
+
+    <script type="text/javascript">
+        function logEvent(event) {
+            var logDiv = document.getElementById('eventLog');
+            var newLog = document.createElement('div');
+            newLog.textContent = event.type;
+            logDiv.appendChild(newLog);
+        }
+
+        var button = document.getElementById('eventButton');
+
+        var events = ['mouseover', 'mouseout', 'mousedown', 'mouseup', 'click'];
+
+        events.forEach(function(eventType) {
+            button.addEventListener(eventType, logEvent);
+        });
+    </script>
+</body>
+</html>

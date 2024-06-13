@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>InnerHTML</title>
+</head>
+<body>
+    <div id="myDiv">이곳에 요소가 추가됩니다.</div>
+
+    <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+    var divElement = document.getElementById("myDiv");
+
+    divElement.innerHTML = 
+    '<h1> h1 요소가 추가되었습니다.</h1> <p> p 요소가 추가되었습니다.</p>';
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>드래그 이벤트 처리</title>
+</head>
+<body>
+    <div id="name">정혜원</div>
+    <div id="status">드래그 가능</div>
+
+    <script>
+        let dragCount = 0;
+        const nameElement = document.getElementById('name');
+        const statusElement = document.getElementById('status');
+
+        nameElement.addEventListener('mousedown', (event) => {
+            if (event.button !== 0) return;
+            dragCount = 1;
+            statusElement.textContent = `드래그 시작[${dragCount}]`;
+
+            const updateStatus = () => {
+                if (dragging) {
+                    dragCount++;
+                    statusElement.textContent = `드래그 시작[${dragCount}]`;
+                    requestAnimationFrame(updateStatus);
+                }
+            }
+
+            let dragging = true;
+            requestAnimationFrame(updateStatus);
+
+            const mouseupHandler = () => {
+                dragging = false;
+                statusElement.textContent = '드래그 가능';
+                document.removeEventListener('mousemove', updateStatus);
+                document.removeEventListener('mouseup', mouseupHandler);
+            };
+
+            document.addEventListener('mouseup', mouseupHandler);
+        });
+    </script>
+</body>
+</html>

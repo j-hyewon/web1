@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>연습문제 23번</title>
+</head>
+<body>
+    <script type="text/javascript">
+    let count = parseInt(prompt("입력할 숫자의 개수를 입력하세요:"));
+
+    let numbers = [];
+
+    for (let i = 0; i < count; i++) {
+    let num = parseFloat(prompt("숫자를 입력하세요:"));
+    numbers.push(num);
+    }
+
+    let maxValue = Math.max(...numbers);
+    let minValue = Math.min(...numbers);
+
+    alert("최댓값: " + maxValue);
+    alert("최솟값: " + minValue);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> 배경색 변경</title>
+</head>
+<body>
+    <div id="outerBox" style="background: pink; width: 550px; height: 300px;" />
+    </div>
+
+    <script type="text/javascript">
+        function changeColor(id, color) {
+            document.getElementById(id).style.background = color;
+        }
+    </script>
+ 
+    <button onclick="changeColor('outerBox', 'blue');"> Blue </button>
+    <button onclick="changeColor('outerBox', 'red');"> Red </button>
+    <br/>
+</body>
+</html>

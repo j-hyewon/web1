@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> DOM 인터페이스를 이용한 name 속성값 알아내기 </title>
+</head>
+<body>
+    <input id="dept" type="text" name="department" value="web programming">
+    <script type="text/javascript">
+        var element = document.getElementById('dept');
+        var nameAttributeValue = element.getAttribute('name');
+        alert(nameAttributeValue);
+    </script>
+</body>
+</html>

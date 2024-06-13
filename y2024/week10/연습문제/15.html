@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>버튼을 누르면 버튼이 삭제되는 코드</title>
+</head>
+<body>
+    <div id="button_area">
+        <input type="button" value="button 1"/>
+        <input type="button" value="button 2"/>
+        <input type="button" value="button 3"/>
+    </div>
+
+    <script type="text/javascript">
+        var buttonArea = document.getElementById('button_area');
+        var buttons = buttonArea.getElementsByTagName('input');
+
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', function() {
+            buttonArea.removeChild(this);
+            });
+        }
+    </script>
+</body>
+</html>

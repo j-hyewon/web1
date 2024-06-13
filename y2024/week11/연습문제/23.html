@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>간단한 이벤트처리 예제 확장</title>
+</head>
+<body>
+    <form>
+        <label for="number1">숫자 1:</label>
+        <input type="number" id="number1" name="number1">
+        <br><br>
+        <label for="number2">숫자 2:</label>
+        <input type="number" id="number2" name="number2">
+        <br><br>
+        <input type="button" value="빼기" onclick="subtract()">
+        <input type="button" value="곱하기" onclick="multiply()">
+        <input type="button" value="나누기" onclick="divide()">
+    </form>
+
+    <script>
+        function subtract() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+            var result = num1 - num2;
+            alert('결과: ' + result);
+        }
+
+        function multiply() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+            var result = num1 * num2;
+            alert('결과: ' + result);
+        }
+
+        function divide() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+            if (num2 === 0) {
+                alert('오류: 0으로 나눌 수 없습니다.');
+            } else {
+                var result = num1 / num2;
+                alert('결과: ' + result);
+            }
+        }
+    </script>
+</body>
+</html>

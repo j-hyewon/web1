@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>버튼 생성 후 div요소에 삽입</title>
+</head>
+<body>
+    <div id="button_area"></div>
+    <script type="text/javascript">
+        var button1 = document.createElement('input');
+        button1.type = 'button';
+        button1.value = '자바스크립트에 의해서 동적으로 생성 및 삽입되었음(1)';
+        button1.name = '자바스크립트에 의해서 동적으로 생성 및 삽입되었음(1)';
+
+        var button2 = document.createElement('input');
+        button2.type = 'button';
+        button2.value = '자바스크립트에 의해서 동적으로 생성 및 삽입되었음(2)';
+        button2.name = '자바스클립트에 의해서 동적으로 생성 및 삽입되었음(2)';
+
+        var buttonArea = document.getElementById('button_area');
+
+        buttonArea.appendChild(button1);
+        buttonArea.appendChild(button2);
+    </script>
+</body>
+</html>

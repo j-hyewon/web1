@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>연습문제 24번</title>
+</head>
+<body>
+    <script type="text/javascript">
+    let count = parseInt(prompt("입력할 단어의 개수를 입력하세요:"));
+
+    let words = [];
+
+    for (let i = 0; i < count; i++) {
+    let word = prompt("단어를 입력하세요:");
+    words.push(word);
+    }
+
+    let ascendingOrder = [...words].sort();
+    let descendingOrder = [...words].sort().reverse();
+
+    alert("오름차순 정렬: " + ascendingOrder);
+    alert("내림차순 정렬: " + descendingOrder);
+    </script>
+</body>
+</html>
